@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Twitter</title>
+</head>
+<body>
+    <main>
+        <aside class="menu-lateral-esquerda">
+            <a class="a-esquerda" href="#">
+                <img class="logo img-esquerda" src="img/logo-twitter.svg" alt="logo do Twitter">
+            </a>
+            <a class="a-esquerda" href="#">
+                <img class="img-esquerda" src="img/hash.svg" alt="simbolo de hashtag">
+                Explorar
+            </a>
+            <a class="a-esquerda" href="#">
+                <img class="img-esquerda" src="img/engrenagem.svg" alt="simbolo de engrenagem">
+                Configurações
+            </a>
+        </aside>
+        <section class="explorar">
+            <header class="header-explorar">
+                <p class="explorar-header">Explorar</p>
+                <img class="engrenagem-header" src="img/engrenagem.svg" alt="">
+            </header>
+            <section class="cards"></section>
+        </section>
+        <aside class="menu-lateral-direita">
+            <section class="menu-lateral-div">
+                <p class="novo">Novo no Twitter?</p>
+                <p class="inscreva">Inscreva-se para ter sua própria timeline <br>personalizada!</p>
+                <button>inscrever-se no Google</button>
+                <button>inscrever-se com Apple</button>
+                <button>criar conta</button>
+                <p class="politicas">Ao se inscrever, você concorda com os <a href="#">Termos de Serviço</a> e a <a href="#">Política de Privacidade</a>, incluindo o <a href="#">Uso de Cookies</a>.</p>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <section>
+            <div>
+                <p>Não perca o que está acontecendo</p>
+                <p>As pessoasque usam twitter são as primeiras a saber.</p>
+            </div>
+            <div>
+                <button onclick="abrir()" class="entrar">Entrar</button>
+                <button>Inscrever-se</button>
+            </div>
+        </section>
+    </footer>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" onclick="fechar()">&times;</span>
+            <div class="conteudo-modal">
+                <img src="img/logo-twitter.svg">
+                <h2>Entrar no twitter</h2>
+                <button>fazer login com o Google</button>
+                <button>Entrar com Apple</button>
+                <p>ou</p>
+                <input type="text" placeholder="Celular,e-mail ou nome de usuário">
+                <button>Avançar</button>
+                <button style="color: #FFF; background-color: transparent;">esqueceu sua senha?</button>
+                <p>não tem uma conta?<a href="#">inscreva-se</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
